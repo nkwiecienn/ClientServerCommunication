@@ -27,5 +27,5 @@ Error handling:
 
 How to run the program:
 
-- First, start the server by compiling the Server.java file. It is important to do this before running the client.
-- Then players can join by compiling the Client.java file.
+- First, start the server by running the Server.java file. It is important to do this before running the client.
+- Then players can join by running the Client.java file.
