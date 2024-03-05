@@ -1,25 +1,31 @@
-Poniższy program służy do rozgrywki w pokera 5-kartowego dobieranego.
+# Five-Card Draw Poker Game
 
-Zaimplementowane przeze mnie zasady gry:
-- na początku gry każdy z graczy dostaje 5 kart;
-- następnie rozpoczyna się pierwsza faza stawiania zakładów;
-- nie ma ustalonego pierwszego zakładu;
-- faza kończy się kiedy wszyscy gracze mają wyłożoną równą kwotę;
-- następnie każdy z graczy może wymienić do 4 kart;
-- rozpoczyna się druga faza stawiania zakładów;
-- remisy są rozstrzygane, używając najlepszej karty dla danej ręki np.: dla dwóch par wygra para z lepszą kartą, dla full house lepsza trójka;
-- jeżeli dalej nie można rozstrzygnąć remisu, stawka jest dzielona pomiędzy nimi.
+This program is designed for playing five-card draw poker.
 
-Komunikacja z serverem:
-- server przed każdym ruchem informuje o możliwych czynnościach;
-- grę rozpoczyna się komunikatem "new"/"existing" w celu odpowiednio stworzenia/dołączenia do gry;
-- następnie należy podać liczbę graczy (od 2 do 4) lub też ID gry (ID gry to GameN gdzie N jest numerem hosta danej gry);
-- server dalej informuje o przebiegu gry oraz możliwych komendach;
-- ważne jest, aby pamiętać, że podczas fazy stawiania zakładów należy podać stawkę DO której podbijamy.
+Implemented rules of the game:
 
-Obsługa błędów:
-- w przypadku podania błędnej wartości server informuje o tym i pozwala wpisać daną wartość jeszcze raz (do skutku).
+- At the beginning of the game, each player is dealt 5 cards.
+- Then the first betting phase begins.
+- There is no fixed initial bet.
+- The phase ends when all players have placed an equal amount.
+- Then each player can exchange up to 4 cards.
+- The second betting phase begins.
+- Ties are resolved using the best card for the hand, e.g., for two pairs, the pair with the higher card wins; for a full house, the better three of a kind wins.
+- If a tie still cannot be resolved, the pot is split among them.
 
-Sposób uruchomienia programu:
-- na początku należy uruchomić server, kompilując plik Server.java. Ważne jest, aby zrobić to przed uruchomieniem klienta;
-- następnie mogą dołączyć do niego gracze, kompilując plik Client.java.
+Communication with the server:
+
+- Before each move, the server informs about possible actions.
+- The game starts with the message "new"/"existing" to create/join a game respectively.
+- Then the number of players (from 2 to 4) or the game ID (where the game ID is GameN where N is the host number of the game) should be provided.
+- The server continues to inform about the progress of the game and possible commands.
+- It is important to remember that during the betting phase, the stake TO which we raise must be provided.
+
+Error handling:
+
+- In case of entering an incorrect value, the server informs about it and allows entering the value again (repeatedly until correct).
+
+How to run the program:
+
+- First, start the server by compiling the Server.java file. It is important to do this before running the client.
+- Then players can join by compiling the Client.java file.
