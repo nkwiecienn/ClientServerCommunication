@@ -1,0 +1,12 @@
+
+s
+java:S2095"QUse try-with-resources or close this "ServerSocketChannel" in a "finally" clause.(ãöŒÎüÿÿÿÿ8˜ğàĞÎ1
+G	java:S106"+Replace this use of System.out by a logger.(¤·Šş8ğàĞÎ1
+L	java:S1060"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¢ğàĞÎ1
+L	java:S106K"+Replace this use of System.out by a logger.( ¤±Íıÿÿÿÿ8¤ğàĞÎ1
+G	java:S106W"+Replace this use of System.out by a logger.(ºìÙ¾8¦ğàĞÎ1
+L	java:S106h"+Replace this use of System.out by a logger.(û²¶¢ûÿÿÿÿ8ªğàĞÎ1
+L	java:S106z"+Replace this use of System.out by a logger.(ƒÍá‡øÿÿÿÿ8«ğàĞÎ1
+M	java:S106‚"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8«ğàĞÎ1
+H	java:S106Š"+Replace this use of System.out by a logger.(•²ËÊ8¬ğàĞÎ1
+M	java:S106‘"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8­ğàĞÎ1
